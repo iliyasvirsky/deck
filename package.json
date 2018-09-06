@@ -1,0 +1,15 @@
+{
+  "name": "deckofcards",
+  "version": "1.0.0",
+  "description": "quick dekc that allows you to draw a card, with some test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha deck.spec.js",
+    "start": "deck.js"
+  },
+  "author": "Iliya Svirsky",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
