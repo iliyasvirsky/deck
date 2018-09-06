@@ -42,7 +42,7 @@ describe('Deck Building', function() {
       assert.equal(players[0].length, '26');
 
       // should also test that it had no dups
-      for(let i=0; i<players[0].length; i++) {
+      for(let i = 0; i < players[0].length; i++) {
         assert.equal(players[1][i] == players[0][i], false);
       }
 
