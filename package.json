@@ -1,7 +1,7 @@
 {
   "name": "deckofcards",
   "version": "1.0.0",
-  "description": "quick dekc that allows you to draw a card, with some test",
+  "description": "quick dekc that allows you to draw a card, shuffle and draw cards for players with some test",
   "main": "index.js",
   "scripts": {
     "test": "mocha deck.spec.js",

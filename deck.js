@@ -15,8 +15,8 @@ function cards() {
   }
   function getCard(cardNumber) {
     const type = ['Spades', 'Hearts', 'Diamonds', 'Clubs'];
-    const cardName = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
-    return type[cardNumber%4] + ' of ' + cardName[cardNumber%13]
+    const cardName = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Quenn', 'King', 'Ace'];
+    return cardName[cardNumber%13] + ' of ' + type[cardNumber%4]
   }
   // This function is to shuffle remaining cards in the deck
   function shuffle() {
@@ -37,7 +37,7 @@ function cards() {
   	return getCard(drawnCard)
   }
 
-  // draws deck and puts it into object
+  // draws deck and puts it into matrix, the matrix is [players[cards]]
   function drawDeckForPlayers(numberOfPlayers = 1) {
     if (numberOfPlayers < 1) return 'numberOfPlayers has to be larger then 0'
     let players = []
